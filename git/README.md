@@ -11,9 +11,27 @@
 - Working directory
     - The folder in which I will write code on my local machine
 - Staging area
+    - Intermediate area
 - Local repository
     - `.git` folder that gets added after running `git init`
 
 #### Remote Repository
 - The remote repository is what's hosted on GitHub
 
+## Commands
+### Step 1
+`git add .` or `git add <filename>`
+- Saves changes made in working directory into the staging area
+
+### Step 2
+`git commit -m "Meaningful message describing change(s)"`
+- Adds a message to commit
+- Means saving the changes in your local repository, moving the changes to the local repository
+
+### Step 3
+`git remote add origin https://github.com/marielle-lopez/_nology.git`
+- This is done only when you first create your repository
+
+### Step 4
+`git push -u origin main`
+- Pushes our committed changes in the local repository to the remote repository
