@@ -1,1 +1,5 @@
 formspree - do not add 'name' attribute for "password"
+
+ensure branch name is main and not master, since main is the standard now
+
+git pull origin main
