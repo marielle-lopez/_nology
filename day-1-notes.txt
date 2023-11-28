@@ -1,0 +1,16 @@
+iterm
+Xcode command line tools
+	xcode-select --install
+homebrew - package manager
+	brew install tldr
+
+git --version
+which curl
+
+use git bash as it uses same commands as unix
+
+do not use spaces in file and directory names
+echo command is useful for printing the contents of a variable
+hold alt and arrow keys to move line of code in VS code
+HTML checker - checks for incorrect HTML writing
+article should be used for independent content
