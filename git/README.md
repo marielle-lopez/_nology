@@ -40,3 +40,8 @@
 ### Step 4
 `git push -u origin main`
 - Pushes our committed changes in the local repository to the remote repository
+
+## Other Commands
+
+`git pull origin main`
+- Pulls changes from the remote repository to the local repository
