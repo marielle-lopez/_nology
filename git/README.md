@@ -1,5 +1,8 @@
 # Git
 
+- Ensure that the main branch name is `main`, not `master`
+    - `main` is the standard after 2014
+
 ## What is Git?
 - It is a version control system that makes collaboration one the same code base easy
 - Multiple people can work on the same code base without interrupting each other
@@ -29,8 +32,10 @@
 - Means saving the changes in your local repository, moving the changes to the local repository
 
 ### Step 3
-`git remote add origin https://github.com/marielle-lopez/_nology.git`
+`git remote add origin git@github.com:marielle-lopez/_nology.git`
 - This is done only when you first create your repository
+- Make sure you use your SSH key, not the HTTPS url
+- If the SSH key is not used, run `git remote set-url origin git@github.com:marielle-lopez/_nology.git`
 
 ### Step 4
 `git push -u origin main`
