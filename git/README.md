@@ -46,6 +46,12 @@
 `git pull origin main`
 - Pulls changes from the remote repository to the local repository
 
+`git diff`
+- Compares working directory and staging area; checks what's in the working directory that's not in the staging area
+
+`git diff --staged`
+- Shows what's in the staging area and not in the local repository
+
 ## Creating a Repository via Command Line
 ```
 echo `# wales-test` >> README.md
@@ -56,6 +62,7 @@ echo `# wales-test` >> README.md
     git remote add origin git@github.com
     git push -u origin main
 ```
+You can use `-u` flag to link local repo branch to main branch of remote repo, so subsequent pushes automatically push to main branch.
 
 ## Creating a Repository by Cloning
 ```
