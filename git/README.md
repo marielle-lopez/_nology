@@ -45,3 +45,19 @@
 
 `git pull origin main`
 - Pulls changes from the remote repository to the local repository
+
+## Creating a Repository via Command Line
+```
+echo `# wales-test` >> README.md
+    git init
+    git add README.md
+    git commit
+    git branch -M main
+    git remote add origin git@github.com
+    git push -u origin main
+```
+
+## Creating a Repository by Cloning
+```
+git clone <SSH link>
+```

@@ -1,0 +1,11 @@
+.git is the local repository, a file that accumulates the 
+	changes that we're not ready to send to the remote 
+	repository
+
+git init adds the .git file
+git add <file, directory, or .>
+git commit -m "message"
+git branch -M main renames the default branch to main
+git push origin main
+
+SSH key is one for each device you use
