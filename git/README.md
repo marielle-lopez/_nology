@@ -21,7 +21,7 @@
 #### Remote Repository
 - The remote repository is what's hosted on GitHub
 
-## Commands
+## Linking the Local Repository to the Remote Repository
 ### Step 1
 `git add .` or `git add <filename>`
 - Saves changes made in working directory into the staging area
