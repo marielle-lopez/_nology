@@ -43,8 +43,14 @@
 
 ## Other Commands
 
-`git pull origin main`
+`git pull origin <branch>`
 - Pulls changes from the remote repository to the local repository
+
+`git pull` is a short version of 2 commands:
+- `git fetch`
+    - Only updates our local repository
+- `git merge`
+    - Merges changes in local repository with the working directory
 
 `git diff`
 - Compares working directory and staging area; checks what's in the working directory that's not in the staging area
@@ -62,7 +68,7 @@ echo `# wales-test` >> README.md
     git remote add origin git@github.com
     git push -u origin main
 ```
-You can use `-u` flag to link local repo branch to main branch of remote repo, so subsequent pushes automatically push to main branch.
+- You can use `-u` flag to link local repo branch to main branch of remote repo, so subsequent pushes automatically push to main branch
 
 ## Creating a Repository by Cloning
 ```
