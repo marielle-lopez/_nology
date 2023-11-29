@@ -1,0 +1,31 @@
+button {
+    background-color: blueviolet;
+    color: white;
+    border: 2px solid blueviolet;
+}
+
+button:hover {
+    color: blueviolet;
+    background: white;
+    border: 2px solid blueviolet;
+}
+
+a:link {
+    color: teal;
+}
+
+/* what the link looks like when it's been visited */
+a:visited {
+    color: teal;
+}
+
+a:hover {
+    background-color: teal;
+    color: white;
+}
+
+/* what the link looks like when you click or click and hold */
+a:active { 
+    color: black;
+    background-color: yellow; 
+}
