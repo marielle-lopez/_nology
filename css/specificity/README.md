@@ -6,8 +6,11 @@ The rules of how CSS works and which selectors take preference over other select
 - Class selectors have a lower specificity score than ID selectors
 - Inline styling have the highest specificity score, but it's bad practise to use inline styling as it makes debugging more difficult
 
+Specificity is important to understand for debugging purposes, but also to crucial in knowing how to apply styling to certain sections of a HTML document.
+
 ## Scoring
-For documentation on CSS specificity scoring, see: https://www.w3schools.com/css/css_specificity.asp
+For documentation on CSS specificity scoring, see: https://www.w3schools.com/css/css_specificity.asp and 
+https://www.specifishity.com
 - 1, 0, 0
     ```CSS
     #label {

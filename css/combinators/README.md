@@ -8,6 +8,7 @@
     }
     ```
 - Class selector
+    - It's common to see `container` as a name for a class, especially got `div` elements
     ```CSS
     .wrapper {
         border: 1px solid #c6c6c6;
