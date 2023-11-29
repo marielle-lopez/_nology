@@ -85,9 +85,22 @@ If you want to get a different branch other than main, you need to create the br
 
 
 ## Creating Branches
-We create branches to make changes that are not reflected in the main branch.
+We create branches to make changes that are not reflected in the `main` branch.
 
 Naming branches follows the convention `feature/<whatever you're working on>`.
+- `main`
+    - The code that is deployed
+- Develop branch
+    - Code we don't want to be deployed yet
+    - Where everything gets tested
+    - Where we want to group added features, and this group of changes is added to `main` when a pull request is fulfilled
+    - Typically have branches itself, and these sub-branches adds pull requests to the develop branch
+        - `feature/302/change-bg-colour`
+        - `feature/303/add-searchbar`
+        - `feature/304/add-better-error-handling`
+    - `hotfix/some-bug-fix` is another branch you'll typically see in develop branches as well, which fixes a bug
+
+Pull requests typically have tests running as well to ensure everything is still working.
 
 We create branches so that code created can be reviewed by others.
 - To check if code is up to quality
