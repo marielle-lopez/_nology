@@ -1,0 +1,30 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: blue;
+}
+
+h1 + p, p:nth-of-type(4) {
+    color: red;
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+}
+
+p:nth-of-type(2), p:nth-of-type(5) {
+    color: coral;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p:nth-of-type(6), p:nth-of-type(7) {
+    color: brown;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body h1, body h1 + p, body h1 + p ~ ul, p:nth-of-type(4) {
+    border: 1px solid black;
+}
