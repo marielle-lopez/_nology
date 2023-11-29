@@ -9,7 +9,7 @@ A layout system that allows us to place elements on the page. To use flexbox, yo
 }
 ```
 ### `flex-wrap`
-By default, it is `nowrap`. If the parent container is not large enough to accommodate the accumulated sizes of the flex items, you can set `flex-wrap` to `wrap` to prevent flex items from shrinking their size when the parent container is too small. The flex items will wrap to the next line if needed. Super helpful for smaller devices.
+By default, it is `nowrap`. If the parent container is not large enough to accommodate the accumulated sizes of the flex items, you can set `flex-wrap` to `wrap` to prevent flex items from shrinking their size when the parent container is too small. The flex items will wrap to the next line if needed. Super helpful for smaller devices. This property ensures the dimensions of the flex items are respected, in a sense.
 ```CSS
 .container {
     display: flex;
