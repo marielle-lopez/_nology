@@ -1,0 +1,40 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 900px;
+    height: 300px;
+}
+
+div {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card4 {
+    background: lightblue;
+}
+
+.card5 {
+    background-color: orange;
+}
+
+.card6 {
+    background-color: palevioletred;
+}
+
+.card7 {
+    background-color: crimson;
+}
