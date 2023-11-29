@@ -9,7 +9,7 @@ html {
 
 body {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     flex-wrap: wrap;
     width: 900px;
     height: 300px;
@@ -23,18 +23,22 @@ div {
     align-items: center;
 }
 
-.card4 {
+.card8 {
     background: lightblue;
 }
 
-.card5 {
+.card9 {
     background-color: orange;
 }
 
-.card6 {
-    background-color: palevioletred;
+.card10 {
+    background-color: hotpink;
 }
 
-.card7 {
+.card11 {
     background-color: crimson;
+}
+
+.card12 {
+    background-color: lightgreen;
 }
