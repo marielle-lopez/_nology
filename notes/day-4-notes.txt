@@ -1,5 +1,7 @@
 if branch is completed, you can safely delete the branch
 
+tailwind css
+
 awwwards.com and search for portfolio
 dribbble.com and search for portfolio
 https://pages.github.com/ to host portfolio
