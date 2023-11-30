@@ -1,0 +1,31 @@
+$main-colour: green;
+$primary-font: Arial;
+$padding-sm: 15px;
+$padding-md: 30px;
+
+h1 {
+    color: teal;
+}
+
+.card {
+    border: 1px solid lightblue;
+    padding: 15px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+
+    &__title {
+        color: $main-colour;
+        font-size: 28px;
+    }
+
+    &__description {
+        font-family: Arial;
+
+        &--important {
+            color: $main-colour;
+        }
+    }
+}

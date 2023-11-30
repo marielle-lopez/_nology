@@ -10,8 +10,10 @@
 - Two versions of syntax
     - SCSS is written like regular CSS
     - Sass uses identations, not curly braces
+- Any valid CSS is valid SCSS
 
 ## Nested Styling
+BEM naming convention becomes useful here.
 ```SCSS
 div {
     background-color: red;
@@ -20,12 +22,25 @@ div {
     }
 }
 ```
+```SCSS
+.card {
+    color: black;
+
+    &__title {
+        background-color: lightblue;
+    }
+}
+```
 
 ## Mixins
 A little bit like JavaScript functions.
 
 ## Variables
-CSS does have variables, but writing them in Sass are better.
+CSS does have variables, but writing them in Sass are better. They're also useful for consistency, and doesn't require you to remember specific pixel sizes or HEX codes!
+- Write variables at the top of your SCSS file
+```SCSS
+$main-color: blue;
+```
 
 ## Modules
 
@@ -43,6 +58,14 @@ npm install -g sass
 sass --version
 ```
 - Run this after you install Sass to ensure it has been installed
+
+## Converting SCSS into CSS Using Terminal
+- Make sure you're in the same folder as the SCSS file
+- Makes sure you run this command line when you're styling an SCSS file to be able to see any changes while you're editing, but also to ensure the compiling occurs
+```
+sass --watch --no-source-map styles.scss styles.css
+```
+`styles.scss` can be replaced by the location of the `.scss` file you're trying to compile. Same thing for the name of the `.css` file.
 
 ## Helpful Links
 - https://sass-lang.com/documentation/syntax/
