@@ -84,3 +84,7 @@ By default, the flex items determine the height of the flex container. However, 
     height: 500px;
 }
 ```
+
+### Practice Using These Links
+- https://www.flexboxfroggy.com/
+- https://www.cssgridgarden.com/
