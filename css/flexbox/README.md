@@ -57,6 +57,44 @@ The two properties `flex-direction` and `flex-wrap` are used so often together t
 }
 ```
 
+### `flex-flow`
+The two properties `flex-direction` and `flex-wrap` are used so often together that the shorthand property `flex-flow` was created to combine them. This shorthand property accepts the value of the two properties separated by a space.
+```CSS
+.container {
+    display: flex;
+    flex-flow: column wrap;
+}
+```
+
+<<<<<<< Updated upstream
+=======
+### `flex-flow`
+The two properties `flex-direction` and `flex-wrap` are used so often together that the shorthand property `flex-flow` was created to combine them. This shorthand property accepts the value of the two properties separated by a space.
+```CSS
+.container {
+    display: flex;
+    flex-flow: column wrap;
+}
+```
+
+### `align-content`
+You can use `align-content` to set how multiple lines are spaced apart from each other. This property takes the following values:
+- `flex-start`
+    - Lines are packed at the top of the container
+- `flex-end`
+    - Lines are packed at the bottom of the container
+- `center`
+    - Lines are packed at the vertical center of the container
+- `space-between`
+    - Lines display with equal spacing between them
+- `space-around`
+    - Lines display with equal spacing aroung them
+- `stretch`
+    - Lines are stretch to fit the container
+
+This can be confusing, but `align-content` determines the spacing between lines, while `align-items` determines how the items as a whole are aligned within the container. When there is only one line, `align-content` has no effect.
+
+>>>>>>> Stashed changes
 ### Making Inline Elements Behave Like Block Elements
 Helpful if you don't want to wrap each item in a `div` tag. The default `flex-direction` value is set to `row`.
 ```CSS
