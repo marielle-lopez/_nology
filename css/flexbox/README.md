@@ -48,6 +48,31 @@ Very popular flexbox properties that makes website layouts dynamic!
 }
 ```
 
+### Making Inline Elements Behave Like Block Elements
+Helpful if you don't want to wrap each item in a `div` tag. The default `flex-direction` value is set to `row`.
+```CSS
+.container {
+    display: flex;
+    flex-direction: column;
+}
+```
+`column-reverse` and `row-reverse` reverses the order in which the flex items are displayed.
+- This will change where `flex-start` and `flex-end` are as well
+
+Take note that when you do this, the axis on which `align-items` and `justify-content` work on changes. They essentially swap. So, `justify-content` would work from top to bottom, and `align-items` would work from left to right instead.
+
+### `gap`
+Adds space between flex items.
+```CSS
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+```
+
 ## Other Notes
 - `div`
     - Width, by default, will be width of the viewport
