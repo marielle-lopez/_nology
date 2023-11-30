@@ -2,11 +2,11 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.header {
+.header__border {
     border: 3px dashed green;
 }
 
-.header--coral {
+.header__border--coral {
     border: 2px solid coral;
 }
 
