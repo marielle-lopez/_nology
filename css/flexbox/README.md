@@ -48,6 +48,24 @@ Very popular flexbox properties that makes website layouts dynamic!
 }
 ```
 
+### `flex-flow`
+The two properties `flex-direction` and `flex-wrap` are used so often together that the shorthand property `flex-flow` was created to combine them. This shorthand property accepts the value of the two properties separated by a space.
+```CSS
+.container {
+    display: flex;
+    flex-flow: column wrap;
+}
+```
+
+### `flex-flow`
+The two properties `flex-direction` and `flex-wrap` are used so often together that the shorthand property `flex-flow` was created to combine them. This shorthand property accepts the value of the two properties separated by a space.
+```CSS
+.container {
+    display: flex;
+    flex-flow: column wrap;
+}
+```
+
 <<<<<<< Updated upstream
 =======
 ### `flex-flow`

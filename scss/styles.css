@@ -1,0 +1,23 @@
+h1 {
+  color: teal;
+}
+
+.card {
+  border: 1px solid lightblue;
+  padding: 15px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.card__title {
+  color: green;
+  font-size: 28px;
+}
+.card__description {
+  font-family: Arial;
+}
+.card__description--important {
+  color: green;
+}
