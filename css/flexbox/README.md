@@ -48,6 +48,51 @@ Very popular flexbox properties that makes website layouts dynamic!
 }
 ```
 
+### Making Inline Elements Behave Like Block Elements
+Helpful if you don't want to wrap each item in a `div` tag. The default `flex-direction` value is set to `row`.
+```CSS
+.container {
+    display: flex;
+    flex-direction: column;
+}
+```
+`column-reverse` and `row-reverse` reverses the order in which the flex items are displayed.
+- This will change where `flex-start` and `flex-end` are as well
+
+Take note that when you do this, the axis on which `align-items` and `justify-content` work on changes. They essentially swap. So, `justify-content` would work from top to bottom, and `align-items` would work from left to right instead.
+
+### `gap`
+Adds space between flex items.
+```CSS
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+```
+
+## BEM - Block__Element--Modifier
+- Adds logic and structure to naming our classes
+- Prevents non-meaningful names from being utilised, but also helps with generating class names
+- Creates reuseable class names
+- Avoid using more than 2 elements in the class name
+    - If there is more than 2 elements involved, skip some elements
+- It is up to you how modular you want your styling to be
+- Start new blocks for different styling
+- This approach moves away from using element selectors and classes instead
+
+```HTML
+<div class="card">
+    <h3 class="card__title">Hello World!</h3>
+</div>
+
+<div>
+    <h3 class="card__title card__title--underlined">Hello Universe!</h3>
+</div>
+```
+
 ## Other Notes
 - `div`
     - Width, by default, will be width of the viewport
@@ -59,3 +104,7 @@ By default, the flex items determine the height of the flex container. However, 
     height: 500px;
 }
 ```
+
+### Practice Using These Links
+- https://www.flexboxfroggy.com/
+- https://www.cssgridgarden.com/
