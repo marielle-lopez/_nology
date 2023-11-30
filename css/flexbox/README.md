@@ -48,6 +48,15 @@ Very popular flexbox properties that makes website layouts dynamic!
 }
 ```
 
+### `flex-flow`
+The two properties `flex-direction` and `flex-wrap` are used so often together that the shorthand property `flex-flow` was created to combine them. This shorthand property accepts the value of the two properties separated by a space.
+```CSS
+.container {
+    display: flex;
+    flex-flow: column wrap;
+}
+```
+
 ### Making Inline Elements Behave Like Block Elements
 Helpful if you don't want to wrap each item in a `div` tag. The default `flex-direction` value is set to `row`.
 ```CSS
