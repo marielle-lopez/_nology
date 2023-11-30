@@ -139,6 +139,12 @@ If the main branch changes while you are working on another branch, you want to 
 `git pull origin main`
 - Ensure you pull the changes on the main branch when pull requests are fulfilled on GitHub
 
+`git stash`
+- If you forget to make a new branch, you can stash your changes into memory and then make a branch and checkout to it
+
+`git stash pop`
+- When you've made your new branch and checkout to it, you can grab your changes from memory using this command
+
 
 ## `.gitignore` file
 Add anything in this file you don't want to push to the remote repository, e.g. (`.vscode` files).
