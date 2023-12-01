@@ -172,5 +172,34 @@ You can also create mixins that take advantage of BEM naming conventions.
 }
 ```
 
+## Extending Code to Other Code
+Can be more useful when you're not using BEM naming convention. Basically adds styling from one class to another.
+- `%` (placeholders) allows you to store multiple values, unlike `$` (variables)
+    - Placeholders are global, so you don't have to import them
+
+```SCSS
+// placeholder
+%flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    background-color: teal;
+    border: 2px solid black;
+    padding: 6px 12px;
+    font-size: 18px;
+}
+
+.btn-secondary {
+    @extend .btn;
+}
+
+.card {
+    @extend %flex-center;
+    color: blue;
+}
+```
+
 ## Helpful Links
 - https://sass-lang.com/documentation/syntax/
