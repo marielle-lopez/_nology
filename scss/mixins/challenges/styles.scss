@@ -14,3 +14,7 @@
     @include mixins.border(dashed, blue);
     @include mixins.font;
 }
+
+.button, .chip, .pill {
+    margin-bottom: 20px;
+}
