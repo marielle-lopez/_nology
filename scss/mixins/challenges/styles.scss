@@ -1,0 +1,16 @@
+@use "./partials/mixins.scss";
+
+.button {
+    @include mixins.border(dotted, red);
+    @include mixins.font;
+}
+
+.chip {
+    @include mixins.border(solid, blue);
+    @include mixins.font;
+}
+
+.pill {
+    @include mixins.border(dashed, blue);
+    @include mixins.font;
+}
