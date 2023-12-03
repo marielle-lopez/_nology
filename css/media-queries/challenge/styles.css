@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+}
+
+.flag__stripe {
+  width: 100vw;
+  height: 33vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .flag__stripe__first {
+    background-color: black;
+  }
+  .flag__stripe__second {
+    background-color: rgb(255, 45, 45);
+  }
+  .flag__stripe__third {
+    background-color: rgb(255, 223, 44);
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 899px) {
+  .flag {
+    display: flex;
+  }
+  .flag__stripe {
+    height: 100vh;
+  }
+  .flag__stripe__first {
+    background-color: black;
+  }
+  .flag__stripe__second {
+    background-color: rgb(255, 223, 44);
+  }
+  .flag__stripe__third {
+    background-color: rgb(255, 45, 45);
+  }
+}
+@media only screen and (min-width: 900px) {
+  .flag {
+    display: flex;
+  }
+  .flag__stripe {
+    height: 100vh;
+  }
+  .flag__stripe__first {
+    background-color: seagreen;
+  }
+  .flag__stripe__second {
+    background-color: white;
+  }
+  .flag__stripe__third {
+    background-color: rgb(255, 146, 45);
+  }
+}

@@ -1,0 +1,25 @@
+@mixin vertical-stripe-orientation {
+  .flag {
+    display: flex;
+
+    &__stripe {
+      height: 100vh;
+    }
+  }
+}
+
+@mixin flag-stripe-colors($first, $second, $third) {
+  .flag__stripe {
+    &__first {
+      background-color: $first;
+    }
+
+    &__second {
+      background-color: $second;
+    }
+
+    &__third {
+      background-color: $third;
+    }
+  }
+}

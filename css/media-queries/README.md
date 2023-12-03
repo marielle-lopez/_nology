@@ -52,6 +52,10 @@ You should create one mixin per device.
 }
 ```
 
+The smallest screen size you should worry about is a width of around 360px.
+
+When you're dealing with items you'd like to put in a grid, it's usually best to use flexbox properties instead as it's easier.
+
 ## Helpful Links
 https://getbootstrap.com/docs/5.0/layout/breakpoints/
 https://www.w3schools.com/css/css_rwd_mediaqueries.asp
