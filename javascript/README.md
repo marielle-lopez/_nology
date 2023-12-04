@@ -74,6 +74,8 @@ A variable that you cannot re-assign a value to.
 
 ## Operators
 
+Remember that arithmetic operators take precedence over comparison operators.
+
 ### Arithmetic Operators
 
 - Addition `+`
