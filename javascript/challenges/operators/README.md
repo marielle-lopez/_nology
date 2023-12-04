@@ -20,9 +20,9 @@ true || false; // true
 true || false; // true
 true || false + true; // true
 true * false && false + true; // false
-10 && 123 && -1 && 3; // true
-10 && 123 && 0 && 3; // false
-(10 && (123 || "") && parseInt("Roisin")) || 23 / 23 - 1; // false
-3 && "Calum" && ("" || 26); // true
-3 && "Remi" && (null || 86 * 0 || ("" + 1 && "Cat" + "Dog")); // true
+10 && 123 && -1 && 3; // true, 3
+10 && 123 && 0 && 3; // false, 0
+(10 && (123 || "") && parseInt("Roisin")) || 23 / 23 - 1; // false, 0
+3 && "Calum" && ("" || 26); // true, 26
+3 && "Remi" && (null || 86 * 0 || ("" + 1 && "Cat" + "Dog")); // true, CatDog
 ```
