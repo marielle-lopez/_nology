@@ -29,7 +29,7 @@ Print a string containing all three variables in the console (should look like "
 ```js
 const firstName = "Marielle";
 const lastName = "Lopez";
-const age = 23;
+let age = 23;
 
 console.log(
   `Hi, my name is ${firstName} ${lastName} and I am ${age} years old.`
