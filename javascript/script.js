@@ -7,3 +7,5 @@ console.log(myName); // "Marielle"
 
 let favouriteColour = "Teal";
 console.log(favouriteColour); // "Teal"
+
+console.log((892783 != "89278" + 3) == 0);
