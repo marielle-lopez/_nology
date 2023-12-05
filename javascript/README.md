@@ -54,6 +54,8 @@ You can use `typeof` to help identify the data type of a variable or value.
 
 A labelled value, and we can reference the name to access the stored value. It's a way to store data in memory by giving it a name, and then we use that name to access the data.
 
+When you're initialising variables without assigning values, a good practise is to assign `null` instead of just leaving it empty.
+
 You can declare variables without assigning a value. Printing these values will give a result of `undefined`.
 
 ```javascript

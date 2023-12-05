@@ -1,0 +1,3 @@
+code-alongs > js > js-challenges and run: npm install
+code-alongs > js > js-challenges and run: npm run test -- js2 // will run test suite in js2 folder
+test suites with names x at the front will be skipped, remove the x to get them to run
