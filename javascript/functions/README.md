@@ -44,7 +44,7 @@ function print(string) {
 }
 ```
 
-## Function Scope
+## Scope
 
 Scope is an item's ability to access other items.
 
