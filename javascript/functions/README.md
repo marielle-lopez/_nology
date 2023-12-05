@@ -43,3 +43,24 @@ function print(string) {
   console.log(string);
 }
 ```
+
+## Arrow Functions
+
+You assign a function to a variable as its value.
+
+Arrow functions with one line of code do not require a return statement.
+
+Arrow functions cannot call other functions that have not been initialised yet, unlike normal functions.
+
+- This is part of a concept called function hoisting
+  - Function keyword functions are hoisted, while arrow functions are not
+
+```js
+const myFunction = (num1, num2) => {
+  num1 + num2;
+};
+
+const sayHello = () => {
+  "Hello world!";
+};
+```
