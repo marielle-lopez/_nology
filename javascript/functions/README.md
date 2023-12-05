@@ -44,6 +44,12 @@ function print(string) {
 }
 ```
 
+## Function Scope
+
+Scope is an item's ability to access other items.
+
+An item will have generally have access to items that are outside of its scope and at a same level as itself.
+
 ## Arrow Functions
 
 You assign a function to a variable as its value.
