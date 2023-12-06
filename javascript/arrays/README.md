@@ -113,7 +113,14 @@ console.log(newArray); // ["Mai", "Marielle", "Pebbles"]
 
 ## Useful Array Method Combinations
 
+Moves the first item to the last position.
+
 ```js
 array.push(array.shift());
+```
+
+Moves the last item to the first position.
+
+```js
 array.unshift(array.pop());
 ```
