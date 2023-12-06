@@ -36,3 +36,11 @@ for (let i = 0; i < hobbies.length; i++) {
 // "Gym"
 // "Video Games"
 ```
+
+## `break`
+
+The `break` keyword allows you to break out of a loop early and completely.
+
+## `continue`
+
+The `continue` keyword allows you to break out of the current iteration and moves onto the next iteration of the loop.
