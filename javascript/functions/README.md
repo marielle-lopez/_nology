@@ -50,6 +50,10 @@ Scope is an item's ability to access other items.
 
 An item will have generally have access to items that are outside of its scope and at a same level as itself.
 
+`var` allows you to create variables that are accessible outside of its scope.
+
+- Avoid using it as it can cause nasty bugs, but if you're confident with using them, go for it
+
 ## Arrow Functions
 
 You assign a function to a variable as its value.
