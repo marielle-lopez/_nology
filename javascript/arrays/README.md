@@ -110,3 +110,10 @@ newArray.sort();
 
 console.log(newArray); // ["Mai", "Marielle", "Pebbles"]
 ```
+
+## Useful Array Method Combinations
+
+```js
+array.push(array.shift());
+array.unshift(array.pop());
+```
