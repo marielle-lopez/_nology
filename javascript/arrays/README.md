@@ -111,6 +111,12 @@ newArray.sort();
 console.log(newArray); // ["Mai", "Marielle", "Pebbles"]
 ```
 
+### `.slice()`
+
+This function takes a portion of an array or string based on the given boundaries. The first number is required and is the starting index (inclusive) you'd like to start slicing from. The second number is optional, is exclusive and is the end index you like to stop slicing at.
+
+Slice can be preferred over the `.substring()` method because it still returns something if the given indices are out-of-bounds.
+
 ## Useful Array Method Combinations
 
 Moves the first item to the last position.
