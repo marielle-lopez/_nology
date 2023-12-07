@@ -74,3 +74,26 @@ const sayHello = () => {
   "Hello world!";
 };
 ```
+
+```js
+function calculate(number, func) {
+  return func(number);
+}
+
+const squareNumber = () => {
+  number ** 2;
+};
+
+console.log(squareNumber(4)); // 4
+console.log(calculate(5, squareNumber)); // 25
+```
+
+Above in the last line, we are passing a function as an argument into the `calculate()` function.
+
+We can also pass in anonymous functions as well. Anonymous functions are not stored in a variable or declared like normal functions with a name.
+
+- Anonymous functions don't require `return` statement if the block of code to be executed is just one line
+
+```js
+console.log(calculate(100, (number) => number / 2));
+```
