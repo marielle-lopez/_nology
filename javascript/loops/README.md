@@ -13,6 +13,10 @@ Common variable names for incrementers (in order): `i`, `j`, `k`.
 
 You have to declare and initialise a variable you want to use as your incrementer. This is followed by a condition your increment has to satisfy for the for loop to continue (otherwise the loop exits), and then how your incrementer is updated.
 
+Use for loops when you know when a loop should end, such as the end of an array. On the other hand, use while loops when you don't know when a loop should end, such as brute-forcing a search for a search term.
+
+### For Loops
+
 ```js
 for (let i = 0; i < 3; i++) {
   console.log("Hello again!");
@@ -21,6 +25,44 @@ for (let i = 0; i < 3; i++) {
 // "Hello again!"
 // "Hello again!"
 // "Hello again!"
+```
+
+### While Loops
+
+```js
+let pets = ["Willow", "Skittles", "Pebbles", "Serena", "Mitch"];
+let i = 0;
+
+while (i < pets.length) {
+  console.log(pets[i]);
+  i++;
+}
+
+// Willow
+// Skittles
+// Pebbles
+// Serena
+// Mitch
+```
+
+```js
+while (i--) {
+  console.log(pets[i]);
+}
+```
+
+### Do/While Loops
+
+It is an exit-controlled loop, where even if the test condition is false, the loop body will be executed at least once.
+
+```js
+let i = 0;
+do {
+  console.log("Hello!");
+  i++;
+} while (i < 0);
+
+// "Hello!"
 ```
 
 ## Iterating Through an Array
