@@ -140,3 +140,19 @@ const output = names.reduce((string, name) => {
   return string;
 }, "");
 ```
+
+If you don't specify the initial value of the accumulator, it will just take the value of the first item in the array being iterated on.
+
+## `.sort()`
+
+```js
+array.sort((a, b) => b - a);
+```
+
+The above example checks if `b` is larger than `a`. If it is, the expression will return a positive number, and a negative number if it isn't. Because of this, the resulting returned array will be sorted in descending order.
+
+Below shows the example of using the `sort` method to sort things in ascending order.
+
+```js
+array.sort((a, b) => a - b);
+```
