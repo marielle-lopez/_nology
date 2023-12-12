@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <div class="my-div">I am a div</div>
+    <div id="myDiv">I am a div</div>
+    <p>I am a paragraph</p>
+    <button id="myButton">Click me!</button>
+    <script>
+      const myButton = document.querySelector("#myButton");
+      myButton.addEventListener("click", (event) => {
+        const div = document.querySelector("#myDiv");
+        div.innerHTML = "The div is changed " + new Date().getTime();
+      });
+
+      div.classList.toggle("green");
+    </script>
+    <style>
+      .green {
+        color: green;
+      }
+
+      .red {
+        color: red;
+      }
+    </style>
+  </body>
+</html>
