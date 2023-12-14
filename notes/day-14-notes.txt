@@ -7,6 +7,8 @@ use # to declare private fields
 
 inheritance vs composition (google)
 
+use forEach iterator when you don't need to return anything or changing anything
+
 
 JAVASCRIPT I QUIZ
 
