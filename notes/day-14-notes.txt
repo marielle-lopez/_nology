@@ -1,0 +1,35 @@
+codegolf
+codegolf.stackexchange
+mvp - minimum viable product
+logical or operator
+
+use # to declare private fields
+
+inheritance vs composition (google)
+
+
+JAVASCRIPT I QUIZ
+
+next time, write implementation if it's a one-liner
+
+
+question 5
+pure function - a function you can copy and paste into another file and still get a result, a pure function isn't dependent on external factors
+
+impure because firstName is being used out of scope
+
+
+question 6
+pure function because it doesn't use anything out of scope
+
+could be argued to be impure because .reverse() changes the underlying array order
+
+try to only mutate things that are inside of the function, not things that are out-of-scope for the function; don't reference things outside of the function
+
+
+question 17
+output is banana because '+' before a string will result in 'NaN'
+
+
+question 21
+add an if statement to create an early exit condition (validation)
