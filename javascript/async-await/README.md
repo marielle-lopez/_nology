@@ -151,5 +151,40 @@ async function makeSmallTalk(input) {
   }
 };
 
-makeSmallTalk('Fred')?
+makeSmallTalk('Fred');
+```
+
+## Doing Things in Parallel
+
+The problem with async/await is that we start thinking sequentially, when some scenarios can have things runnings simultaneously.
+
+Below is an example that will take so long if the input is a long array. For each person in the array, you add an additional 2 seconds to your wait time.
+
+```js
+async function greetSomePeople(...people) {
+  const names = [];
+
+  for (const person of people) {
+    const name = await rememberName(person);
+    names.push(name);
+  }
+
+  console.log(`Hello ${names.toString()}.`);
+};
+```
+
+This is where `Promise.all()` and `Promise.allSettled()` comes into play. You pass in an array of promises and they are processed in parallel. This is possible due to the event loop.
+
+```js
+async function greetSomePeople(...people) {
+  const namePromises = [];
+
+  for (const person of people) {
+    const namePromise = rememberName(person);
+    namePromises.push(namePromises);
+  }
+
+  const names = await Promise.all(namePromises);
+  console.log(`Hello ${names.toString()}!`);
+}
 ```
