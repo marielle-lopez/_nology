@@ -5,6 +5,7 @@
 - Why is it preferred?
 - How to handle errors?
 - The 'gotchas'
+  - Awaiting inside of a loop
 
 Async/await is syntactic sugar for writing prototypical inheritance and promises. It's also just promises. It was introduced because it lets us write asynchronous code in a way that looks synchronous. In general, we can write code using promises that's easier to reason and think about. It's preferred because it's often more reaable and a more modern syntax. However, there are times where `.then` and `.catch` are better to use.
 
@@ -174,6 +175,8 @@ async function greetSomePeople(...people) {
 ```
 
 This is where `Promise.all()` and `Promise.allSettled()` comes into play. You pass in an array of promises and they are processed in parallel. This is possible due to the event loop.
+
+If you see yourself using `await` inside of a loop, you'll probably want to use `Promise.all()` in your circumstance.
 
 ```js
 async function greetSomePeople(...people) {
