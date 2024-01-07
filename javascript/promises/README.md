@@ -6,6 +6,22 @@
 - How do we use promises?
 - Why do we use promises?
 
+```js
+function sleep(duration) {
+  return new Promise((resolve) => {
+    setTimeout(() => {}, duration);
+  });
+};
+
+async function myFunctionThatPauses() {
+  console.log("Function has started.");
+  await sleep(1000);
+  console.log("Function has finished.");
+};
+```
+
+In the above function, `myFunctionThatPauses()` will result in "Function has finished." to be outputted before the `sleep()` function even starts. In addition, `myFunctionThatPauses` also returns a promise since it is an asynchronous function.
+
 ## Asynchronous JavaScript
 
 JavaScript is a single-threaded language; it doesn't do multi-threading. JavaScript as a language can do only one thing at a time (...sort of). There are tricks to make it do multiple things asynchronously.

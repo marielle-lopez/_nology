@@ -7,14 +7,14 @@
 - The 'gotchas'
   - Awaiting inside of a loop
 
-Async/await is syntactic sugar for writing prototypical inheritance and promises. It's also just promises. It was introduced because it lets us write asynchronous code in a way that looks synchronous. In general, we can write code using promises that's easier to reason and think about. It's preferred because it's often more reaable and a more modern syntax. However, there are times where `.then` and `.catch` are better to use.
+Async/await is syntactic sugar for writing prototypical inheritance and promises. It's also just promises. It was introduced because it lets us write asynchronous code in a way that looks synchronous. In general, we can write code using promises that's easier to reason and think about. It's preferred because it's often more reaable and a more modern syntax. However, there are times where `.then` and `.catch` are better to use, like when you want to resolve a promise later down the line.
 
 ## Async
 
 Async is a keyword we can add to function definitions to make them asynchronous.
 
 ```js
-async function myFunction() {};
+async function myFunction() {}
 
 const myOtherFunction = async () => {};
 ```
@@ -24,7 +24,7 @@ Every asynchronous function returns a **promise**. Below are identical functions
 ```js
 async function multiply() {
   return 42;
-};
+}
 
 async function multiply() {
   return Promise.resolve(42);
@@ -36,7 +36,7 @@ As with all promises, we only have access to promises with `.then`.
 ```js
 async function number() {
   return 42;
-};
+}
 
 const result = number();
 result.then((answer) => console.log(answer));
@@ -48,7 +48,7 @@ Below is a promise that rejects.
 const theProblem = async () => {
   // return Promise.reject(new Error('Oh no!'));
   throw new Error("Oh no!");
-}
+};
 
 const result = theProblem();
 result.catch((error) => console.warn(error.message));
@@ -64,7 +64,7 @@ You don't just have to await functions, but there's not really any cases to awai
 
 ```js
 const slowAdd = (num1, num2) => {
-  if (typeof num1 !== 'number' || typeof num2 !== 'number') {
+  if (typeof num1 !== "number" || typeof num2 !== "number") {
     reject(new Error("Must use numbers."));
   }
 
@@ -76,8 +76,8 @@ const slowAdd = (num1, num2) => {
 async function printAnswer(a, b) {
   console.log("Calculating...");
   const result = await slowAdd(a, b); // we wait for this promise to fulfil
-  console.log('The answer is: ' + result);
-  console.log('This happened after we waited!');
+  console.log("The answer is: " + result);
+  console.log("This happened after we waited!");
 }
 
 printAnswer(10, 5);
@@ -89,6 +89,8 @@ In 'promise hell', we we have some sort of computation where one result relies o
 
 This issue also causes your typical `catch()` statement to not work if it only exists at the end of the chain of your `then()`. Instead, you have to add a `catch()` at the end of every `then()`, which makes your code look like a pyramid.
 
+With async/await, you keep things in a single scope!
+
 ```js
 const rememberName = (input) => {
   return new Promise((resolve, reject) => {
@@ -98,7 +100,7 @@ const rememberName = (input) => {
       }
 
       resolve(input);
-  }), 2000}) 
+  }), 2000})
 };
 
 const rememberLocation = (name) => {
@@ -147,12 +149,12 @@ async function makeSmallTalk(input) {
     console.log(`Hi, how are you, ${name}?`);
     const location = await rememberLocation(name);
     console.log(`How's the weather in ${location}?`);
-  } catch(error) {
+  } catch (error) {
     console.log(`Universal error: ${error}`);
   }
-};
+}
 
-makeSmallTalk('Fred');
+makeSmallTalk("Fred");
 ```
 
 ## Doing Things in Parallel
@@ -171,7 +173,7 @@ async function greetSomePeople(...people) {
   }
 
   console.log(`Hello ${names.toString()}.`);
-};
+}
 ```
 
 This is where `Promise.all()` and `Promise.allSettled()` comes into play. You pass in an array of promises and they are processed in parallel. This is possible due to the event loop.
