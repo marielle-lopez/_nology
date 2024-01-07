@@ -32,4 +32,50 @@
     - SolidJS
     - Svelte
 
+`<></>` are React fragments.
+
+- In JSX, we can only return one parent element. This one element can be a `div`, but this can cause unnecessary nesting. An alternative is to use React fragments!
+- The downside to this is that you cannot at attributes to React fragments, but you can add `React.Fragment` to add attributes to them, like `key`.
+
+```jsx
+<React.Fragment></React.Fragment>
+```
+
+Do not forget that good HTML practices still apply, such as semantic HTML.
+
+Name components starting with a capital letter.
+
+## How to Create a React Application
+
+Below is the way that's no longer supported (https://www.npmjs.com/package/create-react-app).
+
+`npx create-react-app <name>`
+
+We will be using the method below. With Vite, it gives you only what you need, whereas the above method gives you the extras. With Vite, you can have to add the extra stuff, like testing libraries. `npm run build` turns all JSX into plain JS.
+
+The menu for installing is buggy on GitBash, take a look at the below link.
+
+https://vitejs.dev/guide/
+
+Asset folder in the `public` folder to hold images.
+
+`npm create vite@latest`
+`npm run build`
+
+## Styling
+
+Modules are a way to get a unique class name for each components so that you can reuse the class names for other components, makes it easier for you to make class names. Characters are added to the class name dynamically, so class names don't clash.
+
+## Other Notes
+
 Airbnb uses React.
+
+https://babeljs.io/
+
+- Turns JSX into JS
+
+React Developer tools
+
+SCSS is not in-built in a Vite project, we have to install it as a dependency. One of the benefits is that we don't have to run the compiler to keep watching our SCSS files, and when we run `npm run build`, SCSS is compiled for us automatically.
+
+`npm i --save-dev sass`
