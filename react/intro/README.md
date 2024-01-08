@@ -66,6 +66,16 @@ Asset folder in the `public` folder to hold images.
 
 Modules are a way to get a unique class name for each components so that you can reuse the class names for other components, makes it easier for you to make class names. Characters are added to the class name dynamically, so class names don't clash.
 
+## Props
+
+Short for properties. `props` is an argument for functional components and it's a way to pass data between components.
+
+One thing to note is that we can only pass props from parent component to child component.
+
+Whatever you call your props when passing it to components, ensure that the names are the same in the parent and child component.
+
+Passing down a maximum of 3 levels is okay, but if you have to exceed this, then there's a better way.
+
 ## Other Notes
 
 Airbnb uses React.
@@ -79,3 +89,5 @@ React Developer tools
 SCSS is not in-built in a Vite project, we have to install it as a dependency. One of the benefits is that we don't have to run the compiler to keep watching our SCSS files, and when we run `npm run build`, SCSS is compiled for us automatically.
 
 `npm i --save-dev sass`
+
+Take a look at a npm package called prop types, but you'll most likely use Typescript.

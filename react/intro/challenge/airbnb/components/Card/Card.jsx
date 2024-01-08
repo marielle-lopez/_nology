@@ -1,9 +1,9 @@
 import styles from "./Card.module.scss";
 
-const Card = ({ location, distance, date, price }) => {
+const Card = ({ location, distance, date, price, imgSrc }) => {
   return (
     <div className={styles.container}>
-      <img className={styles.image} src="../public/assets/placeholder.jpg" />
+      <img className={styles.image} src={`../public/assets/${imgSrc}`} />
       <div className={styles.information}>
         <p className={styles.location}>{location}</p>
         <p className={styles.distance}>{distance} kilometres away</p>
