@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 250px;
+}
+
+.information {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.image {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.location {
+  margin: 0;
+  width: 100%;
+  font-weight: bold;
+}
+
+.distance {
+  margin: 0;
+  width: 100%;
+}
+
+.date {
+  margin: 0;
+  width: 100%;
+}
+
+.price {
+  margin: 0;
+  width: 100%;
+}
