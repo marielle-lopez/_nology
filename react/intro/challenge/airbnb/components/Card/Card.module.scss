@@ -39,4 +39,9 @@
 .price {
   margin: 0;
   width: 100%;
+
+  &--bold {
+    font-weight: bold;
+    text-decoration: underline;
+  }
 }

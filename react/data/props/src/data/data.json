@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Alice",
+    "age": 20,
+    "location": "Melbourne",
+    "isLocationVisible": true,
+    "isAgeVisible": false
+  },
+  {
+    "id": 2,
+    "name": "John",
+    "age": 29,
+    "location": "Sydney",
+    "isLocationVisible": true,
+    "isAgeVisible": true
+  },
+  {
+    "id": 3,
+    "name": "Kate",
+    "age": 32,
+    "location": "Brisbane",
+    "isLocationVisible": false,
+    "isAgeVisible": false
+  },
+  {
+    "id": 4,
+    "name": "Josh",
+    "age": 22,
+    "location": "Canberra",
+    "isLocationVisible": true,
+    "isAgeVisible": true
+  },
+  {
+    "id": 5,
+    "name": "Mary",
+    "age": 25,
+    "location": "Melbourne",
+    "isLocationVisible": false,
+    "isAgeVisible": true
+  }
+]

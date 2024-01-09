@@ -1,0 +1,13 @@
+.wrapper {
+  &--row {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+  }
+
+  &--column {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+}

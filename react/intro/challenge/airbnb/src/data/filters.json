@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "title": "Amazing pools",
+    "imgSrc": "pool.png"
+  },
+  {
+    "id": 2,
+    "title": "Beach front",
+    "imgSrc": "beach.png"
+  },
+  {
+    "id": 3,
+    "title": "Tiny homes",
+    "imgSrc": "tiny-home.png"
+  },
+  {
+    "id": 4,
+    "title": "Snowflake",
+    "imgSrc": "snowflake.png"
+  },
+  {
+    "id": 5,
+    "title": "New",
+    "imgSrc": "new.png"
+  }
+]

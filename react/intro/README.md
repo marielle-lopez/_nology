@@ -76,6 +76,20 @@ Whatever you call your props when passing it to components, ensure that the name
 
 Passing down a maximum of 3 levels is okay, but if you have to exceed this, then there's a better way.
 
+You can provide a default values to props.
+
+You can use lazy evaluation to determine if things render or if a certain prop is passed to a child component. Use ternary operators if you don't want something to render. Some falsy values will render, some won't, so use a ternary operator.
+
+### Children Props
+
+A way to render things between the opening and closing tags of an element. Typically used with styling containers, for example, a flex-wrapper, layout, etc. These are named `children`.
+
+Typically used with context and when we want to set up routes for our React application.
+
+## Key
+
+Every time you are iterating to create multiple components, you need to pass in a key attribute so that React can differentiate between them multiple components. It's best to use the ID of the object, or whatever would be the primary key (unique value of each item).
+
 ## Other Notes
 
 Airbnb uses React.
