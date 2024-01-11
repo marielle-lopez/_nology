@@ -52,7 +52,7 @@ const RefForm = () => {
   };
 
   return (
-    <form className={styles.form_wrapper} onClick={handleSubmit} ref={formRef}>
+    <form className={styles.form_wrapper} onSubmit={handleSubmit} ref={formRef}>
       <div>
         <div className={styles.input_wrapper}>
           <label htmlFor="username">Username</label>
