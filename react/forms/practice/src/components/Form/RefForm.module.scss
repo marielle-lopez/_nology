@@ -1,0 +1,25 @@
+.form_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 500px;
+  min-height: 200px;
+  gap: 20px;
+}
+
+.input_wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.register_btn {
+  margin-top: 50px;
+}
+
+.error_msg {
+  color: #e63946;
+  margin: 0;
+  font-size: small;
+  text-align: right;
+}
