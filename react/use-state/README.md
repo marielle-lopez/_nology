@@ -29,3 +29,5 @@ Another thing to note is that state is only tied to the single render of the com
 ## Other Notes
 
 Implementing a search bar that searches while a user is typing on every keystroke should be avoided if you don't want to do too many API calls when you're working with a database (debounce). Also, best practise with a search bar is to put it in a `<form>`.
+
+State updates are asynchronous. This means that you cannot access the new value of state in the same function you're setting the value of the state in. You can see the most recent value of the state by calling the state outside of the function you were setting a new value to the state in (and make sure it's after such function), or you can use `useEffect` and watch the state you're interested in. This is because `useEffect` executes it's callback function when the state it's watching has changed.

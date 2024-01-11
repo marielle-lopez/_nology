@@ -73,3 +73,5 @@ useEffect lets us run code for one of these phases.
 You can mock a slower internet speed or slow API by going into the Network tab and selecting "Slow 3G".
 
 `await/async` is syntactic sugar for plain JavaScript. So, in React, you can use `.then`.
+
+Do not watch the same state you're updating inside of the `useEffect` callback function. This will cause an infinite loop.
