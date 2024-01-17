@@ -1,0 +1,16 @@
+.nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.link {
+  color: white;
+
+  &:hover {
+    color: aqua;
+  }
+}
+
+.active_link {
+  color: aqua;
+}
