@@ -7,6 +7,7 @@ import HomePage from "../pages/HomePage/HomePage";
 import AddMoviePage from "../pages/AddMoviePage/AddMoviePage";
 import { NavBar } from "../components/NavBar/NavBar.jsx";
 import MoviePage from "../pages/MoviePage/MoviePage.jsx";
+import LiveHomePage from "../pages/HomePage/LiveHomePage.jsx";
 
 function App() {
   // useEffect(() => {
@@ -18,7 +19,8 @@ function App() {
       <BrowserRouter>
         <NavBar />
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          {/* <Route path="/" element={<HomePage />} /> */}
+          <Route path="/" element={<LiveHomePage />} />
           <Route path="/add-movie" element={<AddMoviePage />} />
           <Route path="/movies/:id" element={<MoviePage />} />
         </Routes>

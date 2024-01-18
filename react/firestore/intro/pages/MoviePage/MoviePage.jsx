@@ -1,7 +1,8 @@
 import { useParams } from "react-router-dom";
-import { useEffect, useState } from "react";
-import { getMovieById } from "../../services/movies";
+import { useContext, useEffect, useState } from "react";
+import { getMovieById, incrementTimesWatched } from "../../services/movies";
 import styles from "./MoviePage.module.scss";
+// import { RefreshContext } from "../../context/RefreshContextProvider";
 
 const MoviePage = () => {
   // to access something from the URL, we use the useParams hook
@@ -12,6 +13,7 @@ const MoviePage = () => {
   const [movie, setMovie] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+  // const { refresh, setRefresh } = useContext(RefreshContext);
 
   useEffect(() => {
     setLoading(true);
@@ -20,6 +22,14 @@ const MoviePage = () => {
       .catch((e) => setError(e.message))
       .finally(setLoading(false));
   }, [id]);
+
+  const handleIncrement = () => {
+    incrementTimesWatched(id);
+    // .then(() => {
+    //   setRefresh(refresh + 1);
+    // })
+    // .catch((e) => console.warn(e.message));
+  };
 
   return (
     <main>
@@ -39,6 +49,7 @@ const MoviePage = () => {
                 Watched {movie.timesWatched} time
                 {movie.timesWatched !== 1 ? "s" : ""}
               </p>
+              <button onClick={handleIncrement}>Increment</button>
             </div>
           </div>
         </>

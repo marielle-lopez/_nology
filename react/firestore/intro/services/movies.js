@@ -5,6 +5,9 @@ import {
   getDocs,
   deleteDoc,
   addDoc,
+  updateDoc,
+  increment,
+  onSnapshot,
 } from "firebase/firestore";
 import { db } from "../config/firebase";
 
@@ -50,14 +53,56 @@ export const deleteMovieById = async (id) => {
   return;
 };
 
-export const addMovie = async (movie) => {
-  const docRef = await addDoc(collection(db, "movies"), {
-    title: movie.title,
-    director: movie.director,
-    releaseYear: parseInt(movie.releaseYear),
-    image: movie.image,
-    timesWatched: parseInt(movie.timesWatched),
+// export const addMovie = async (movie) => {
+//   const docRef = await addDoc(collection(db, "movies"), {
+//     title: movie.title,
+//     director: movie.director,
+//     releaseYear: parseInt(movie.releaseYear),
+//     image: movie.image,
+//     timesWatched: parseInt(movie.timesWatched),
+//   });
+
+//   console.log("Document written with ID: ", docRef.id);
+// };
+
+export const addNewMovie = async (data) => {
+  const newMovie = { ...data, timesWatched: 0 };
+
+  try {
+    const docRef = await addDoc(collection(db, "movies"), newMovie);
+    return docRef.id;
+  } catch (e) {
+    throw e;
+  }
+};
+
+export const incrementTimesWatched = async (id) => {
+  const docRef = doc(db, "movies", id);
+
+  await updateDoc(docRef, {
+    timesWatched: increment(1),
+  });
+};
+
+export const subscribeToMovies = (callback) => {
+  const collectionRef = collection(db, "movies");
+
+  const unsubscribe = onSnapshot(collectionRef, (querySnapshot) => {
+    // querySnapshot.forEach((doc) => {
+    //   console.log(doc.id, doc.data());
+    // });
+
+    const movieData = querySnapshot.docs.map((doc) => {
+      return {
+        id: doc.id,
+        ...doc.data(),
+      };
+    });
+
+    callback(movieData);
   });
 
-  console.log("Document written with ID: ", docRef.id);
+  // https://jsfiddle.net/k63L7vjg/
+
+  return unsubscribe;
 };
