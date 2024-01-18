@@ -1,0 +1,8 @@
+hangman
+headstart on projects
+beginner javascript programs
+codewars
+
+check navbar on phone
+nest js and next js
+hover effect

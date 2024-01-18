@@ -1,0 +1,39 @@
+lazy/short-circuit evaluation
+go over 02/01 recording
+password validation personal project
+watch event loop video
+
+!! do not use eval
+- use history tracking to update calculator
+- switch statement
+
+innerHTML can be slow
+put HTML into HTML document
+- createElement instead with loop
+
+change checking code into their own functions with or without parameters
+
+put checkMines with parameters into array instead
+
+put code into script.js
+wherever things are not touching the DOM, return values instead
+make functions independent that don't touch the DOM
+
+toLocaleTimeString
+toLocaleString
+
+replace innerHTML with createElement
+
+nvme
+mvm file
+api key into file
+.gitignore
+
+translate functions 2 or 4
+validation functions
+
+functions takes input and returns a string that doesn't change DOM, makes it easier to test
+js functions to import and export
+event listeners in a separate file
+
+pull request

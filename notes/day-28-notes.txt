@@ -1,0 +1,3 @@
+do not use an external component library for a carousel component
+create a separate collection called 'cart'
+you can create an admin portal to add, remove, and update items in your database

@@ -1,0 +1,3 @@
+arrow functions aren't hoisted so you must use them after their declaration
+curl is another way to fetch data
+promises.push(fetch().then(res => res.json()))

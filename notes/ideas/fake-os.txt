@@ -1,0 +1,52 @@
+- update README.md
+- refactor code for closing windows
+- use module syntax for javascript files
+- allow background colour change
+- add source information on-click of weather in taskbar
+
+- moon phases
+- fortune telling
+
+https://drive.google.com/file/d/1rJAVxG1rirrP9rA0zmGwiv_sstPRH7Nu/view
+https://drive.google.com/file/d/1WeYhagXv0b0ud2FGJWB8xkxsm02LYS2m/view
+https://stackoverflow.com/questions/30683657/use-windows-95-font-on-webpage
+
+os called banana
+
+- sticky note that shows shortcuts
+- paperclip helper (chatbot)
+- logout and login (add password hint)
+- about this computer
+- calendar when you click clock/time
+
+- application ideas
+	- to-do app
+	- music player
+	- instagram (come up with a playful name)
+	- settings (change background colour)
+	- weather
+	- dictionary using wordsAPI
+	- gallery of cat pics using randomcat api
+	- cat facts
+	- new york times api
+	- dad jokes
+	- tic-tac-toe
+	
+gallery
+functionality
+calculator
+notes saved in session storage or array
+game?
+API - simple
+media player
+horoscope app
+don't over complicate
+chatbot
+
+https://www.dafont.com/depixel.font?text=All+your+base+belong+to+us.+Cancel+OK
+https://www.shecodes.io/athena/2587-creating-a-clock-in-javascript#:~:text=You%20can%20use%20the%20setInterval,update%20the%20clock%20every%20second.&text=const%20timeElement%20%3D%20document.,Date()%3B%20const%20hours%20%3D%20now.
+https://codepen.io/LaxusMcfury/pen/ZdeMvE
+https://www.geeksforgeeks.org/how-to-use-the-javascript-fetch-api-to-get-data/
+https://www.dafont.com/forum/read/444823/which-font-is-used-for-windows-95-98-window
+https://github.com/nestoris/Win98SE/blob/main/SE98/apps/64/accessories-image-viewer.png
+https://www.youtube.com/watch?v=I5kj-YsmWjM

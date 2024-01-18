@@ -1,0 +1,6 @@
+add separate branch for tests
+change timeout to 2-3 seconds
+make them responsive
+don't rely on global variables
+split a function into single responsibilities
+	- makes testing easier
