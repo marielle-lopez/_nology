@@ -60,6 +60,6 @@ describe("Search bar component", () => {
     expect(mockFn).toHaveBeenCalledTimes(2);
     console.log(mockFn.mock.calls);
     expect(mockFn.mock.calls[0][0]).toBe("hello");
-    expect(mockFn.mock.calls[1][0]).toBe("apple");
+    expect(mockFn.mock.calls[1][0]).toBe("apple"); // each time search button is clicked, another array is added to calls
   });
 });
