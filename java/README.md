@@ -10,6 +10,8 @@
 - Java Virtual Machine (JVM)
   - Compiles to machine code
   - Runs anywhere (there's a different JVM for every environment)
+  - Heavy in terms of it's memory usage; it takes up a lot of memory
+  - Because it uses a lot of memory, it's performant and speedy, handles more concurrent requests
 - Heavily geared towards object-oriented programming (OOP)
 - Compiled language, it's turned into an executable file (it's turned into Java Bytecode, and this is run on a JVM to further turn it into OS-specific instructions)
   - Thus, we can run into a lot of runtime bugs which prevents our file from being compiled at all
@@ -80,3 +82,11 @@ Most of the time, especially when readability is a top priority and when we know
 #### When to Use `char[]`?
 
 When we're creating memory-critical applications and need to be careful with size. In addition, we can use it when we know the string will never be changed.
+
+## Modifiers
+
+They determine how classes and methods are seen and accessible.
+
+## Variables
+
+Constant variable names are all in uppercase.
