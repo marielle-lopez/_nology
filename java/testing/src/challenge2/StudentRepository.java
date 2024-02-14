@@ -13,13 +13,13 @@ public class StudentRepository {
 		students[2] = student3;
 	}
 	
-	public boolean getStudent(int studentId) {
+	public Student getStudent(int studentId) throws StudentNotFoundException {
 		for (Student student : students) {
 			if (student.getStudentId() == studentId) {
-				return true;
+				return student;
 			}
 		};
 		
-		return false;
+		throw new StudentNotFoundException("Could not find student with ID: " + studentId);
 	}
 }
