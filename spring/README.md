@@ -55,6 +55,7 @@ An entity is an object of a Java class that represents what a record in the data
 ## Quick Notes
 
 - Rebecca Purple
+- Validate in both the front-end and back-end
 
 ### Server
 
@@ -111,6 +112,18 @@ An entity is an object of a Java class that represents what a record in the data
   - Could be an image, HTML, binary code, text, `JSON`, etc., must be a text response
   - In the response structure, there's always a blank line that precedes the body
 
+## Quick Guide
+
+1. Create entity
+2. Create controller
+3. Create DTO
+4. Create service
+5. Create repository
+
+## Entities
+
+Entities need getters and setters.
+
 ## Resources
 
 - https://start.spring.io/
@@ -138,3 +151,4 @@ An entity is an object of a Java class that represents what a record in the data
   - MySQL Driver
   - Validation
   - Spring Boot DevTools
+  - Model Mapper
