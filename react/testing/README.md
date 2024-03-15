@@ -52,13 +52,21 @@ Just a note, Vite uses Vitest, not Jest like the default React application.
 1. Navigate to your project folder.
 2. Install Vitest via `npm install vitest --save-dev` in the terminal.
 3. Add a testing script to `package.json`
+
+```json
+"scripts": {
+    ...,
+    "test": "vitest",
+  }
+```
+
 4. Create a dummy test in the `src` folder called `App.test.jsx`.
 
 ```jsx
-import { describe, it, expect } from "vitest";
+import { describe, it, expect } from 'vitest';
 
-describe("Setup test", () => {
-  it("checks true", () => {
+describe('Setup test', () => {
+  it('checks true', () => {
     expect(true).toBe(true);
   });
 });
